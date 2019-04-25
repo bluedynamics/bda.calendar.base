@@ -1,10 +1,6 @@
-# -*- coding: utf-8 -*-
-# Copyright 2008-2009, BlueDynamics Alliance, Austria - http://bluedynamics.com
-# GNU General Public Licence Version 2 or later
-
-from converter import DT2dt
 from datetime import datetime
 from timezone import timezoneAdjuster
+
 
 def dtYear(dt, context=None):
     """Return the year of dt.
@@ -14,6 +10,7 @@ def dtYear(dt, context=None):
         return dt.year
     return dt.year()
 
+
 def dtMonth(dt, context=None):
     """Return the month of dt.
     """
@@ -21,6 +18,7 @@ def dtMonth(dt, context=None):
         dt = timezoneAdjuster(context, dt)
         return dt.month
     return dt.month()
+
 
 def dtDay(dt, context=None):
     """Return the day of dt.
@@ -30,6 +28,7 @@ def dtDay(dt, context=None):
         return dt.day
     return dt.day()
 
+
 def dtHour(dt, context=None):
     """Return the hour of dt.
     """
@@ -37,6 +36,7 @@ def dtHour(dt, context=None):
         dt = timezoneAdjuster(context, dt)
         return dt.hour
     return dt.hour()
+
 
 def dtMinute(dt, context=None):
     """Return the minute of dt.
@@ -46,6 +46,7 @@ def dtMinute(dt, context=None):
         return dt.minute
     return dt.minute()
 
+
 def dtWeekday(dt, context=None):
     """Return the weekday of dt.
     """
@@ -53,6 +54,7 @@ def dtWeekday(dt, context=None):
         dt = timezoneAdjuster(context, dt)
         return dt.weekday() + 1
     return dt.dow()
+
 
 def pyDt(dt, context=None):
     """Return wether dt is instance of datetime object.
