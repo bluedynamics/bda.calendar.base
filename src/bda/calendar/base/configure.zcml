@@ -1,0 +1,21 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+           xmlns:zcml="http://namespaces.zope.org/zcml"
+           xmlns:pyramid="http://pylonshq.com/pyramid">
+    
+    <!-- pyramid specific -->
+    
+    <pyramid:adapter
+        zcml:condition="installed pyramid"
+        for="*"
+        factory=".timezone.ServerTimezoneFactory"
+    /> 
+    
+    <!-- zope specific -->
+    
+    <adapter
+        zcml:condition="installed Zope2"
+        for="*"
+        factory=".timezone.ServerTimezoneFactory"
+    />
+    
+</configure>
