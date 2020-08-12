@@ -137,7 +137,7 @@ Copyright
 License
 =======
 
-Copyright (c) 2008-2019, BlueDynamics Alliance, Austria
+Copyright (c) 2008-2020, BlueDynamics Alliance, Austria
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
@@ -166,6 +166,12 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 History
 =======
+
+1.2.3
+-----
+
+- Remove superfluous import.
+  [rnix, 2020-08-12]
 
 1.2.2
 -----

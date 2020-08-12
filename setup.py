@@ -3,7 +3,7 @@ from setuptools import setup
 import os
 
 
-version = '1.2.2'
+version = '1.2.3'
 
 
 shortdesc = "Base common calendaring features: Convinience or not coverd yet."
