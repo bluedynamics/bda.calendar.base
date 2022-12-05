@@ -3,9 +3,7 @@ from setuptools import setup
 import os
 
 
-version = '1.2.3'
-
-
+version = '1.2.4.dev0'
 shortdesc = "Base common calendaring features: Convinience or not coverd yet."
 longdesc = open(os.path.join(os.path.dirname(__file__), 'README.rst')).read()
 

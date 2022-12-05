@@ -3,8 +3,7 @@ from timezone import timezoneAdjuster
 
 
 def dtYear(dt, context=None):
-    """Return the year of dt.
-    """
+    """Return the year of dt."""
     if pyDt(dt):
         dt = timezoneAdjuster(context, dt)
         return dt.year
@@ -12,8 +11,7 @@ def dtYear(dt, context=None):
 
 
 def dtMonth(dt, context=None):
-    """Return the month of dt.
-    """
+    """Return the month of dt."""
     if pyDt(dt):
         dt = timezoneAdjuster(context, dt)
         return dt.month
@@ -21,8 +19,7 @@ def dtMonth(dt, context=None):
 
 
 def dtDay(dt, context=None):
-    """Return the day of dt.
-    """
+    """Return the day of dt."""
     if pyDt(dt):
         dt = timezoneAdjuster(context, dt)
         return dt.day
@@ -30,8 +27,7 @@ def dtDay(dt, context=None):
 
 
 def dtHour(dt, context=None):
-    """Return the hour of dt.
-    """
+    """Return the hour of dt."""
     if pyDt(dt):
         dt = timezoneAdjuster(context, dt)
         return dt.hour
@@ -39,8 +35,7 @@ def dtHour(dt, context=None):
 
 
 def dtMinute(dt, context=None):
-    """Return the minute of dt.
-    """
+    """Return the minute of dt."""
     if pyDt(dt):
         dt = timezoneAdjuster(context, dt)
         return dt.minute
@@ -48,8 +43,7 @@ def dtMinute(dt, context=None):
 
 
 def dtWeekday(dt, context=None):
-    """Return the weekday of dt.
-    """
+    """Return the weekday of dt."""
     if pyDt(dt, context=None):
         dt = timezoneAdjuster(context, dt)
         return dt.weekday() + 1
@@ -57,6 +51,5 @@ def dtWeekday(dt, context=None):
 
 
 def pyDt(dt, context=None):
-    """Return wether dt is instance of datetime object.
-    """
+    """Return wether dt is instance of datetime object."""
     return isinstance(dt, datetime)

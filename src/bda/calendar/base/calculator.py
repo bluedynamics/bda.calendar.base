@@ -5,7 +5,7 @@ import datetime
 def CWof(date):
     """The calendar week number of a date.
 
-    @param date: python datetime
+    :param date: python datetime
     """
     return date.isocalendar()[1]
 
@@ -13,8 +13,8 @@ def CWof(date):
 def firstDayOfCW(year, cw, tzinfo=None):
     """First day of a numbered calendar week.
 
-    @param year: year where the week is of (int)
-    @param cw: calendar week (int).
+    :param year: year where the week is of (int)
+    :param cw: calendar week (int).
     """
     # thx to Peter Otten, base found at
     # http://mail.python.org/pipermail/python-list/2004-May/264156.html
@@ -25,8 +25,7 @@ def firstDayOfCW(year, cw, tzinfo=None):
 
 
 def daysOfWeek(year, kw, tzinfo=None):
-    """Yield 7 datetimes of the given calendar week.
-    """
+    """Yield 7 datetimes of the given calendar week."""
     # thx to Peter Otten, base found at
     # http://mail.python.org/pipermail/python-list/2004-May/264156.html
     day = firstDayOfCW(year, kw, tzinfo)

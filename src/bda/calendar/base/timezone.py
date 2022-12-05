@@ -24,5 +24,12 @@ def timezoneAdjuster(context, dt):
 
 def tzawarenow():
     now = datetime.utcnow()
-    return datetime(now.year, now.month, now.day, now.hour, now.minute,
-                    now.second, tzinfo=pytz.timezone('UTC'))
+    return datetime(
+        now.year,
+        now.month,
+        now.day,
+        now.hour,
+        now.minute,
+        now.second,
+        tzinfo=pytz.timezone('UTC')
+    )

@@ -37,8 +37,10 @@ RM_UNTIL = "until"
 RM_FOREVER = "forever"
 
 # the date in future which we assume as "end of forever"
-FROZEN_DATE_IN_FUTURE = datetime(datetime.now().year + 10, 12, 31, 23, 59, 59,
-                                 tzinfo=pytz.timezone('UTC'))
+FROZEN_DATE_IN_FUTURE = datetime(
+    datetime.now().year + 10, 12, 31, 23, 59, 59,
+    tzinfo=pytz.timezone('UTC')
+)
 
 
 # calculators for recue indexes. i.e. for fast search via portal_catalog

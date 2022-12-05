@@ -128,16 +128,10 @@ Contributors
 - Robert Niederreiter <rnix@squarewave.at>
 
 
-Copyright
-=========
-
-- Copyright (c) 2008-2019 BlueDynamics Alliance http://www.bluedynamics.com
-
-
 License
 =======
 
-Copyright (c) 2008-2020, BlueDynamics Alliance, Austria
+Copyright (c) 2008-2022, BlueDynamics Alliance, Austria
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
@@ -164,14 +158,22 @@ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
-History
+Changes
 =======
+
+1.2.4 (unreleased)
+------------------
+
+- Release wheel.
+  [rnix]
+
 
 1.2.3
 -----
 
 - Remove superfluous import.
   [rnix, 2020-08-12]
+
 
 1.2.2
 -----

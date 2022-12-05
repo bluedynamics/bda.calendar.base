@@ -34,15 +34,13 @@ def DT2dt(DT):
 
 
 def dt2UTCString(dt):
-    """Build a string from the timetuple as UTC.
-    """
+    """Build a string from the timetuple as UTC."""
     dt = dt.astimezone(pytz.timezone('UTC'))
     return '-'.join(['%d' % v for v in dt.timetuple()[:6]])
 
 
 def dtFromUTCString(utcstr):
-    """Build datetime from timetuple UTC string.
-    """
+    """Build datetime from timetuple UTC string."""
     y, m, d, h, mi, s = utcstr.split('-')
     dt = datetime.datetime(int(y), int(m), int(d), int(h), int(mi), int(s),
                            tzinfo=pytz.timezone('UTC'))
