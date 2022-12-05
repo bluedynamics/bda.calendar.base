@@ -161,7 +161,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 Changes
 =======
 
-1.2.4 (unreleased)
+1.2.4 (2022-12-05)
 ------------------
 
 - Release wheel.
